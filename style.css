@@ -18,7 +18,7 @@ body {
 
 .header {
     background: #fff;
-    border-bottom: 1px solid #EAEAEA
+    border-bottom: 1px solid #EAEAEA;
 }
 
 .header__inner {
@@ -75,4 +75,74 @@ body {
     width: 28px;
     height: 28px;
     display: block;
+}
+
+.main {
+    background: #F8F8F8;
+}
+
+.services {
+    padding-top: 24px;
+}
+
+.services__head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.services__bar{
+    width: 4px;
+    height: 32px;
+    background: #41F6D7;
+    border-radius: 2px;
+    flex: 0 0 auto;
+    margin-left: -16px;
+}
+
+.services__title {
+    margin: 0;
+    font-size: 28px;
+    line-height: 32px;
+    color: #1B1C21;
+}
+
+
+.services__tabs {
+    margin-top: 24px;
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+
+.services__tabs::-webkit-scrollbar {
+    display: none;
+}
+
+.services__tab {
+    flex: 0 0 auto;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7E7E82;
+    white-space: nowrap;
+    border: 2px solid transparent;
+    background: transparent;
+    text-decoration: none;
+}
+
+.services__tab--active {
+    background: #FFFFFF;
+    border: 2px solid #B8FFEC;
+    color: #7E7E82;
+}
+
+.services__tab:focus-visible {
+  background: #FFFFFF;
+  border-color: #B8FFEC;
+  outline: none;
 }
