@@ -239,6 +239,26 @@ body {
     display: none;
 }
 
+.header__action-text {
+    display: none;  
+}
+
+.services__text--second {
+    display: block;
+}
+
+.services__text--desktop {
+    display: none;
+}
+
+.services__top {
+    width: 100%;
+}
+
+.services__actions {
+    display: none;
+}
+
 @media (min-width: 768px) {
     .container {
         max-width: 1120px;
@@ -313,5 +333,127 @@ body {
     }
 }
 
+@media (min-width: 1120px) {
+    .header {
+        display: none;
+    }
+    
+    .header__contacts {
+        display: none;
+    }
 
+    .services__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        gap: 24px;
+    }
+
+    .services__actions {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        flex-shrink: 0;
+    }
+
+    .services__action {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: none;
+        border: 0;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    .services__action-text {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+        color: #1B1C21;
+    }
+
+    .header__actions {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        margin-left: auto;
+    }
+
+    .header__action {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: none;
+        border: 0;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    .header__action-text {
+        display: inline;
+        background: transparent;
+        border: 0;
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+        color: #1B1C21;
+        background: #FFFFFF;
+    }
+
+    .header__action .icon-btn {
+        position: static;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #FF3E79;
+        flex-shrink: 0;
+    }
+
+    .services__tabs {
+        overflow-x: visible;
+        flex-wrap: wrap;
+        padding-bottom: 0;
+        gap: 1px 1px;
+    }
+
+    .services__text--second {
+        display: none;
+    }
+
+    .services__text--desktop {
+        display: block;
+    }
+
+    .services__content {
+        gap: 64px;
+    }
+
+    .services__image {
+        flex: 0 0 531.35px;
+    }
+
+    .services__image img {
+        width: 100%;
+        aspect-ratio: 531.35 / 307;
+        object-fit: cover;
+    }
+
+    .header__inner > .icon-btn,
+    .header__logo-link {
+        display: none;
+    }
+
+    .header__divider,
+    .header__divider--tablet {
+        display: none;
+    }
+
+    .header__inner {
+        justify-content: flex-start;
+    }
+}
 
