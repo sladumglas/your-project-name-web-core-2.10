@@ -152,7 +152,7 @@ body {
 
 .services__tab {
     flex: 0 0 auto;
-    padding: 8px 16px;
+    padding: 6px 10px;
     border-radius: 6px;
     font-size: 16px;
     line-height: 24px;
@@ -397,7 +397,7 @@ body {
         overflow-x: visible;
         flex-wrap: wrap;
         padding-bottom: 0;
-        gap: 1px 1px;
+        gap: 1px;
     }
 
     .services__text--second {
