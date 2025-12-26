@@ -37,7 +37,6 @@ body {
 
 .container {
     width: 100%;
-    max-width: 430px;
     margin: 0 auto;
     padding: 0 16px;
 }
@@ -129,7 +128,7 @@ body {
 }
 
 .services__title {
-    margin-top: 20px;
+    margin: 0px;
     font-size: 28px;
     line-height: 32px;
     color: #1B1C21;
@@ -199,12 +198,12 @@ body {
     background: none;
     border: none;
     padding: 0;
-    margin-bottom: 24px;
     font-size: 16px;
     color: #1B1C21;
     cursor: pointer;
     font-weight: 500;
     margin-top: 20px;
+    margin-bottom: 24px;
 }
 
 .services__more:focus {
@@ -239,14 +238,6 @@ body {
     display: none;
 }
 
-.header__action-text {
-    display: none;  
-}
-
-.services__text--second {
-    display: block;
-}
-
 .services__text--desktop {
     display: none;
 }
@@ -259,9 +250,30 @@ body {
     display: none;
 }
 
+@media (max-width: 360px) {
+    .header__inner {
+        gap: 12px;
+    }
+
+    .icon-btn {
+        width: 32px;
+        height: 32px;
+        min-width: 32px;
+    }
+
+    .icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .header__logo {
+        height: 26px;
+    }
+}
+
 @media (min-width: 768px) {
     .container {
-        max-width: 1120px;
+        max-width: none;
         padding: 0 24px;
     }
     .header__inner {
@@ -307,20 +319,15 @@ body {
     .services__image {
         flex: 0 0 360px;
         margin-top: 0;
-        border-radius: 12px;
-        overflow: hidden;
     }
 
     .services__image img {
-        width: 100%;
         aspect-ratio: 360 / 208;
         object-fit: cover;
-        display: block;
     }
 
     .services__more {
         align-self: flex-start;
-        margin: 0;
     }
 
     .header__divider--tablet {
@@ -334,6 +341,11 @@ body {
 }
 
 @media (min-width: 1120px) {
+    .container {
+        max-width: 1120px;
+        padding: 0 32px;
+    }
+    
     .header {
         display: none;
     }
@@ -381,38 +393,6 @@ body {
         margin-left: auto;
     }
 
-    .header__action {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        background: none;
-        border: 0;
-        padding: 0;
-        cursor: pointer;
-    }
-
-    .header__action-text {
-        display: inline;
-        background: transparent;
-        border: 0;
-        padding: 0;
-        margin: 0;
-        font-size: 16px;
-        line-height: 24px;
-        font-weight: 500;
-        color: #1B1C21;
-        background: #FFFFFF;
-    }
-
-    .header__action .icon-btn {
-        position: static;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        background: #FF3E79;
-        flex-shrink: 0;
-    }
-
     .services__tabs {
         overflow-x: visible;
         flex-wrap: wrap;
@@ -437,7 +417,6 @@ body {
     }
 
     .services__image img {
-        width: 100%;
         aspect-ratio: 531.35 / 307;
         object-fit: cover;
     }
@@ -456,4 +435,3 @@ body {
         justify-content: flex-start;
     }
 }
-

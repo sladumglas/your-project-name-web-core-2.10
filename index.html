@@ -34,11 +34,11 @@
         
         <div class="header__actions">
             <button class="icon-btn icon-btn--pink"  aria-label="Repair">
-              <img src="./image/icon/repair.svg" alt="" class="icon"> 
+              <img src="./image/icon/repair.svg" alt="" class="icon" aria-hidden="true"> 
             </button>
 
             <button class="icon-btn icon-btn--pink" aria-label="Status">
-              <img src="./image/icon/checkstatus.svg" alt="" class="icon">
+              <img src="./image/icon/checkstatus.svg" alt="" class="icon" aria-hidden="true">
             </button>
         </div>   
         </div>
@@ -105,7 +105,20 @@
             </div>
 
             <div class="services__image">
-              <img src="./image/Picture Copy.png" alt="Сервисный центр">
+              <picture>
+                <source
+                  srcset="./image/frame3.svg"
+                  media="(min-width: 1120px)">
+
+                <source 
+                  srcset="./image/frame2.svg"
+                  media="(min-width: 768px)">
+
+                <img
+                  src="./image/Picture Copy.png"
+                  alt="Service center"
+                  class="services__img">
+              </picture>
             </div>
           </div>
         </div>
